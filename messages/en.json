@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "dashboard": "Dashboard",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Smart workforce operations for the Netherlands and EU",
+    "subtitle": "YEMEN2 NL enables employers, recruiters and teams with multilingual workflows and AI automation.",
+    "cta": "Start free"
+  },
+  "features": {
+    "items": [
+      "Search jobs and apply quickly",
+      "Team scheduling, payroll and contracts",
+      "AI CV matching and shortlisting",
+      "Automated multilingual notifications"
+    ]
+  },
+  "pricing": {
+    "title": "EUR pricing",
+    "subtitle": "Transparent plans for workforce and recruitment"
+  },
+  "dashboard": {
+    "title": "Dashboard overview",
+    "worker": "Workers: search jobs, manage schedule and track earnings.",
+    "manager": "Managers: coordinate teams, publish shifts and monitor outcomes.",
+    "employer": "Employers: post jobs, manage payroll and review reports.",
+    "jobSearch": "Job search",
+    "teamManagement": "Team management",
+    "payroll": "Payroll",
+    "reports": "Reports"
+  },
+  "auth": {
+    "loginTitle": "Log in",
+    "registerTitle": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full name",
+    "loginAction": "Log in",
+    "registerAction": "Register"
+  },
+  "about": {
+    "title": "About YEMEN2 NL",
+    "body": "We build a trusted workforce platform for Dutch and EU employers with strong compliance, speed and quality."
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Head office: Amsterdam, Netherlands (CET). We support customers in four languages."
+  },
+  "legal": {
+    "privacyTitle": "Privacy policy (EU GDPR)",
+    "privacyBody": "We process only required personal data with transparent consent, retention rules and EU-grade protection.",
+    "termsTitle": "Terms of service",
+    "termsBody": "Services are governed by Dutch law with clear terms for employers and candidates."
+  },
+  "footer": {
+    "tagline": "Dutch-first workforce platform for European growth.",
+    "contact": "YEMEN2 NL, Amsterdam, Netherlands · support@yemen2.nl",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}

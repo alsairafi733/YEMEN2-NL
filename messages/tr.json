@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "pricing": "Fiyatlandırma",
+    "dashboard": "Panel",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Hollanda ve AB için akıllı iş gücü platformu",
+    "subtitle": "YEMEN2 NL, işverenler ve işe alım ekipleri için çok dilli iş akışları ve yapay zeka otomasyonu sunar.",
+    "cta": "Ücretsiz başla"
+  },
+  "features": {
+    "items": [
+      "İş ara ve hızlı başvur",
+      "Vardiya, bordro ve sözleşme yönetimi",
+      "YZ destekli CV eşleştirme ve kısa liste",
+      "Otomatik çok dilli bildirimler"
+    ]
+  },
+  "pricing": {
+    "title": "EUR fiyatları",
+    "subtitle": "İş gücü ve işe alım için şeffaf planlar"
+  },
+  "dashboard": {
+    "title": "Panel özeti",
+    "worker": "Çalışanlar: iş ara, takvimi yönet, kazancı takip et.",
+    "manager": "Yöneticiler: ekipleri koordine et, vardiya yayınla, performansı izle.",
+    "employer": "İşverenler: ilan yayınla, bordroyu yönet, raporları incele.",
+    "jobSearch": "İş arama",
+    "teamManagement": "Ekip yönetimi",
+    "payroll": "Bordro",
+    "reports": "Raporlar"
+  },
+  "auth": {
+    "loginTitle": "Giriş yap",
+    "registerTitle": "Hesap oluştur",
+    "email": "E-posta",
+    "password": "Şifre",
+    "fullName": "Ad soyad",
+    "loginAction": "Giriş",
+    "registerAction": "Kaydol"
+  },
+  "about": {
+    "title": "YEMEN2 NL hakkında",
+    "body": "Hollanda ve AB işverenleri için uyumlu, hızlı ve güvenilir bir iş gücü platformu geliştiriyoruz."
+  },
+  "contact": {
+    "title": "İletişim",
+    "body": "Merkez: Amsterdam, Hollanda (CET). Dört dilde destek sunuyoruz."
+  },
+  "legal": {
+    "privacyTitle": "Gizlilik politikası (GDPR)",
+    "privacyBody": "Yalnızca gerekli kişisel verileri, açık onay ve AB düzeyi güvenlik ile işleriz.",
+    "termsTitle": "Hizmet şartları",
+    "termsBody": "Hizmetler Hollanda hukukuna tabidir ve işverenler ile adaylar için net koşullar içerir."
+  },
+  "footer": {
+    "tagline": "Avrupa büyümesi için Dutch-first iş gücü platformu.",
+    "contact": "YEMEN2 NL, Amsterdam, Hollanda · support@yemen2.nl",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
+  }
+}
