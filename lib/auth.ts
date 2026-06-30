@@ -8,6 +8,6 @@ export function validatePassword(password: string): boolean {
   return password.length >= 8;
 }
 
-export function sanitizeInput(input: string): string {
-  return input.replace(/[<>]/g, '').trim();
+export function normalizeInput(input: string): string {
+  return input.normalize('NFKC').trim();
 }
