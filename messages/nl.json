@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Prijzen",
+    "dashboard": "Dashboard",
+    "about": "Over ons",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Slim personeelsbeheer voor Nederland en de EU",
+    "subtitle": "YEMEN2 NL helpt werkgevers, recruiters en teams met meertalige workflows en AI-automatisering.",
+    "cta": "Start gratis"
+  },
+  "features": {
+    "items": [
+      "Vacatures zoeken en direct solliciteren",
+      "Teamplanning, payroll en contractbeheer",
+      "AI CV-matching en shortlist-automatisering",
+      "Meertalige meldingen voor EU, MENA en Turkije"
+    ]
+  },
+  "pricing": {
+    "title": "EUR-prijzen",
+    "subtitle": "Transparante tarieven voor flexibele workforce en recruitment"
+  },
+  "dashboard": {
+    "title": "Dashboardoverzicht",
+    "worker": "Werkers: zoek banen, beheer planning en volg inkomsten.",
+    "manager": "Managers: stuur teams aan, publiceer roosters en monitor prestaties.",
+    "employer": "Werkgevers: plaats vacatures, beheer payroll en bekijk rapportages.",
+    "jobSearch": "Vacature zoeken",
+    "teamManagement": "Teambeheer",
+    "payroll": "Payroll",
+    "reports": "Rapportages"
+  },
+  "auth": {
+    "loginTitle": "Inloggen",
+    "registerTitle": "Account aanmaken",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "fullName": "Volledige naam",
+    "loginAction": "Inloggen",
+    "registerAction": "Registreren"
+  },
+  "about": {
+    "title": "Over YEMEN2 NL",
+    "body": "Wij bouwen een betrouwbaar workforce platform voor werkgevers in Nederland en de EU met focus op compliance, snelheid en kwaliteit."
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Hoofdkantoor: Amsterdam, Nederland (CET). Voor support en sales staan we klaar in vier talen."
+  },
+  "legal": {
+    "privacyTitle": "Privacybeleid (AVG/GDPR)",
+    "privacyBody": "Wij verwerken alleen noodzakelijke persoonsgegevens, met duidelijke toestemming, bewaartermijnen en EU-conforme beveiliging.",
+    "termsTitle": "Algemene voorwaarden",
+    "termsBody": "Onze dienstverlening valt onder Nederlandse wetgeving en transparante servicevoorwaarden voor werkgevers en kandidaten."
+  },
+  "footer": {
+    "tagline": "Dutch-first workforce platform voor Europese groei.",
+    "contact": "YEMEN2 NL, Amsterdam, Nederland · support@yemen2.nl",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden"
+  }
+}
