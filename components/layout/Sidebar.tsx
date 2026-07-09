@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 
 const NAV = [
   { href: '/dashboard',    icon: '🏠', key: 'dashboard' },
+  { href: '/quran',        icon: '📖', key: 'quran'     },
   { href: '/y2flex',       icon: '👷', key: 'y2flex' },
   { href: '/sites',        icon: '🌐', key: 'sites' },
   { href: '/agent',        icon: '🤖', key: 'agent' },
