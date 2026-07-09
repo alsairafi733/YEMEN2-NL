@@ -16,6 +16,7 @@ const NAV = [
 ];
 
 const BOTTOM_NAV = [
+  { href: '/identity',     icon: '🪪', key: 'identity' },
   { href: '/team',         icon: '👥', key: 'team' },
   { href: '/reports',      icon: '📊', key: 'reports' },
   { href: '/billing',      icon: '💳', key: 'billing' },

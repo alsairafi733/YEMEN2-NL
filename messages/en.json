@@ -8,6 +8,7 @@
     "students": "Arab Students",
     "legal": "Legal Consulting",
     "store": "Digital Store",
+    "identity": "Digital Identity",
     "team": "Team",
     "reports": "Reports",
     "billing": "Billing",
@@ -212,6 +213,22 @@
     "service3": "Labor Law",
     "service4": "Contract Review",
     "service5": "Saudi Commercial Law"
+  },
+  "identity": {
+    "title": "Digital Identity",
+    "founder": "Founder",
+    "values": "Values",
+    "skills": "Skills",
+    "principles": "Principles",
+    "goals": "Strategic Goals",
+    "community": "WhatsApp Community",
+    "total_members": "Total Members",
+    "services": "Services",
+    "roadmap": "Roadmap 2026–2030",
+    "progress": "Execution Progress",
+    "domains": "Domains",
+    "servers": "Servers",
+    "assets": "Digital Assets"
   },
   "common": {
     "save": "Save",
