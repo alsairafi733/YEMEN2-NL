@@ -21,8 +21,10 @@ export function Header({ locale, title, onMenuToggle }: HeaderProps) {
   };
 
   const switchLocale = (newLocale: string) => {
-    const path = window.location.pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(path);
+    // Replace only the first path segment (the locale) to avoid issues with locale in slugs
+    const segments = window.location.pathname.split('/');
+    segments[1] = newLocale;
+    router.push(segments.join('/') || '/');
   };
 
   return (
