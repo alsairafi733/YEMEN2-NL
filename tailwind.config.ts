@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,9 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#CE1126", // Yemeni red
-        secondary: "#000000", // Black
-        accent: "#F5A623", // Orange accent
+        primary: "#CE1126",
+        secondary: "#000000",
+        accent: "#F5A623",
+      },
+      fontFamily: {
+        sans: ["Inter", "Segoe UI", "sans-serif"],
+        arabic: ["Cairo", "Tajawal", "sans-serif"],
       },
     },
   },
