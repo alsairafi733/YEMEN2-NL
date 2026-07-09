@@ -7,6 +7,12 @@
     "marketing": "Marketing",
     "students": "Arab Students",
     "legal": "Legal Consulting",
+    "store": "Digital Store",
+    "team": "Team",
+    "reports": "Reports",
+    "billing": "Billing",
+    "pricing": "Pricing",
+    "integrations": "Integrations",
     "settings": "Settings",
     "logout": "Logout"
   },
