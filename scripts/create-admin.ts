@@ -12,7 +12,10 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { hashPassword } from "../lib/security";
 
 function createDb() {
-  const connectionString = process.env.DATABASE_URL!;
+  const connectionString = process.env.DATABASE_URL;
+  if (!connectionString) {
+    throw new Error("DATABASE_URL environment variable is not set");
+  }
   const adapter = new PrismaPg({ connectionString });
   return new PrismaClient({ adapter });
 }
@@ -34,7 +37,7 @@ async function main() {
     data: {
       name,
       email,
-      passwordHash: hashPassword(password),
+      passwordHash: await hashPassword(password),
       role: "admin",
     },
   });

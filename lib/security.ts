@@ -2,18 +2,24 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-const SECRET_KEY = process.env.JWT_SECRET ?? "SUPER_SECRET_Y2_KEY";
+if (!process.env.JWT_SECRET) {
+  throw new Error("JWT_SECRET environment variable is not set");
+}
+const SECRET_KEY = process.env.JWT_SECRET;
 const ALGORITHM = "HS256";
 const ACCESS_TOKEN_EXPIRE_MINUTES = 60;
 
 // ─── Password helpers ────────────────────────────────────────────────────────
 
-export function hashPassword(password: string): string {
-  return bcrypt.hashSync(password, 10);
+export async function hashPassword(password: string): Promise<string> {
+  return bcrypt.hash(password, 10);
 }
 
-export function verifyPassword(password: string, hashed: string): boolean {
-  return bcrypt.compareSync(password, hashed);
+export async function verifyPassword(
+  password: string,
+  hashed: string
+): Promise<boolean> {
+  return bcrypt.compare(password, hashed);
 }
 
 // ─── JWT helpers ─────────────────────────────────────────────────────────────
@@ -61,8 +67,10 @@ export function withAdminAuth(handler: ApiHandler) {
         return res.status(403).json({ detail: "Not enough permissions" });
       }
       return handler(req, res, payload);
-    } catch {
-      return res.status(401).json({ detail: "Invalid token" });
+    } catch (err) {
+      const isExpired =
+        err instanceof jwt.TokenExpiredError ? "Token expired" : "Invalid token";
+      return res.status(401).json({ detail: isExpired });
     }
   };
 }
