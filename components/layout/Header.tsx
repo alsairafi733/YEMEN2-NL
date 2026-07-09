@@ -4,9 +4,10 @@ import { useRouter } from 'next/navigation';
 interface HeaderProps {
   locale: string;
   title?: string;
+  onMenuToggle?: () => void;
 }
 
-export function Header({ locale, title }: HeaderProps) {
+export function Header({ locale, title, onMenuToggle }: HeaderProps) {
   const router = useRouter();
 
   const toggleDark = () => {
@@ -25,8 +26,18 @@ export function Header({ locale, title }: HeaderProps) {
   };
 
   return (
-    <header className="h-14 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-6 bg-white dark:bg-gray-900">
-      {title && <h1 className="font-bold text-sm">{title}</h1>}
+    <header className="h-14 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-4 bg-white dark:bg-gray-900">
+      {/* Hamburger — visible on mobile only */}
+      <button
+        onClick={onMenuToggle}
+        className="lg:hidden w-9 h-9 flex items-center justify-center rounded-lg
+                   hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-xl"
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
+
+      {title && <h1 className="font-bold text-sm hidden lg:block">{title}</h1>}
       <div className="flex-1" />
       <div className="flex items-center gap-2">
         {/* Language switcher */}

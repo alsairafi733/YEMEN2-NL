@@ -17,6 +17,7 @@ const NAV = [
 ];
 
 const BOTTOM_NAV = [
+  { href: '/domains',      icon: '🌍', key: 'domains' },
   { href: '/identity',     icon: '🪪', key: 'identity' },
   { href: '/team',         icon: '👥', key: 'team' },
   { href: '/reports',      icon: '📊', key: 'reports' },
@@ -28,9 +29,11 @@ const BOTTOM_NAV = [
 
 interface SidebarProps {
   locale: string;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-export function Sidebar({ locale }: SidebarProps) {
+export function Sidebar({ locale, isOpen, onClose }: SidebarProps) {
   const t = useTranslations('nav');
   const pathname = usePathname();
 
@@ -39,6 +42,7 @@ export function Sidebar({ locale }: SidebarProps) {
   const NavItem = ({ href, icon, label }: { href: string; icon: string; label: string }) => (
     <Link
       href={`/${locale}${href}`}
+      onClick={onClose}
       className={cn('sidebar-link', isActive(href) && 'active')}
     >
       <span className="text-base leading-none">{icon}</span>
@@ -47,7 +51,15 @@ export function Sidebar({ locale }: SidebarProps) {
   );
 
   return (
-    <aside className="fixed inset-y-0 start-0 w-60 card border-e border-s-0 rounded-none flex flex-col z-30">
+    <aside
+      className={cn(
+        'fixed inset-y-0 start-0 w-60 card border-e border-s-0 rounded-none flex flex-col',
+        'transition-transform duration-300 ease-in-out',
+        /* Desktop: always visible; Mobile: slide in/out */
+        'z-30 lg:translate-x-0',
+        isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0',
+      )}
+    >
       {/* Logo */}
       <div className="px-4 py-5 border-b border-gray-200 dark:border-gray-700">
         <div className="flex items-center gap-3">
