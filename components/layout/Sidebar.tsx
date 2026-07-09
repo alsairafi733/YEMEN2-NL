@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl';
 
 const NAV = [
   { href: '/dashboard',    icon: '🏠', key: 'dashboard' },
-  { href: '/quran',        icon: '📖', key: 'quran'     },
   { href: '/y2flex',       icon: '👷', key: 'y2flex' },
+  { href: '/jobs-yemen',   icon: '🇾🇪', key: 'jobs_yemen' },
   { href: '/sites',        icon: '🌐', key: 'sites' },
   { href: '/agent',        icon: '🤖', key: 'agent' },
   { href: '/marketing',    icon: '📢', key: 'marketing' },
@@ -55,9 +55,11 @@ export function Sidebar({ locale, isOpen, onClose }: SidebarProps) {
       className={cn(
         'fixed inset-y-0 start-0 w-60 card border-e border-s-0 rounded-none flex flex-col',
         'transition-transform duration-300 ease-in-out',
-        /* Desktop: always visible; Mobile: slide in/out */
+        /* Desktop: always visible; Mobile: slide in/out (RTL-aware) */
         'z-30 lg:translate-x-0',
-        isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0',
+        isOpen
+          ? 'translate-x-0'
+          : '-translate-x-full rtl:translate-x-full lg:translate-x-0 lg:rtl:translate-x-0',
       )}
     >
       {/* Logo */}
