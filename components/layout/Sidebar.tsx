@@ -59,7 +59,7 @@ export function Sidebar({ locale, isOpen, onClose }: SidebarProps) {
         'z-30 lg:translate-x-0',
         isOpen
           ? 'translate-x-0'
-          : '-translate-x-full rtl:translate-x-full lg:translate-x-0 lg:rtl:translate-x-0',
+          : 'ltr:-translate-x-full rtl:translate-x-full lg:translate-x-0',
       )}
     >
       {/* Logo */}
