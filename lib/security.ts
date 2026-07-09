@@ -52,7 +52,7 @@ type ApiHandler = (
   req: NextApiRequest,
   res: NextApiResponse,
   admin: TokenPayload
-) => Promise<void>;
+) => Promise<void | NextApiResponse>;
 
 export function withAdminAuth(handler: ApiHandler) {
   return async (req: NextApiRequest, res: NextApiResponse) => {
@@ -68,9 +68,9 @@ export function withAdminAuth(handler: ApiHandler) {
       }
       return handler(req, res, payload);
     } catch (err) {
-      const isExpired =
+      const errorDetail =
         err instanceof jwt.TokenExpiredError ? "Token expired" : "Invalid token";
-      return res.status(401).json({ detail: isExpired });
+      return res.status(401).json({ detail: errorDetail });
     }
   };
 }
